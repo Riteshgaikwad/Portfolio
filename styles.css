@@ -12,6 +12,7 @@ body{
     background-color: #021526;
     overflow-x: hidden;
 }
+/* navbar styling */
 
 .navbar{
     background-color: #03346E;
@@ -22,7 +23,7 @@ body{
     color:white ;
     padding: 10px 20px;
     width: 100vw;
-    position: fixed;
+    
 }
 .name-logo{
     font-weight: bold;
@@ -49,6 +50,10 @@ body{
     
     
 }
+
+/* home section start  */
+
+
 #home{
    display: flex;
    justify-content: space-around;
@@ -89,9 +94,12 @@ button:hover{
 }
 
 
+/* about section starts  */
+
+
 #about{
-    
-    padding-top: 220px;
+    padding: 50px;
+    margin-top: 170px;
     color: white;
 }
 .about-start{
@@ -133,4 +141,56 @@ button:hover{
 .achivments:hover, .education:hover{
     box-shadow: 4px 4px 10px 0px rgba(211, 206, 206, 0.5);
     
+}
+
+/* skills section starts */
+
+
+.first-section,.second-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+    
+}
+.skills-start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    color: white;
+    padding-top: 50px;
+}
+
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: 1px solid white;
+    width: 500px;
+    /* background-color: #03346E; */
+    padding: 20px 30px;
+    border-radius: 15px;
+    transition: 0.8s;
+    margin: 30px 20px;
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px 0 rgba(238, 233, 233, 0.2), 0 6px 20px 0 rgba(238, 234, 234, 0.19);
+    }
+}
+.html{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 4px;
+    line-height: 2.8;
+}
+.tittle{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* project section starts */
+
+#project{
+    color: white;
 }
