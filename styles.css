@@ -1,5 +1,136 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 *,*::before,*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;   
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #021526;
+    overflow-x: hidden;
+}
+
+.navbar{
+    background-color: #03346E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none !important;
+    color:white ;
+    padding: 10px 20px;
+    width: 100vw;
+    position: fixed;
+}
+.name-logo{
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav-link ul{
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    
+}
+.nav-link a{
+    text-decoration: none;
+    color:white ;
+    padding: 10px;
+    transition:0.3s;
+}
+
+.nav-link a:hover{
+    color: bisque;
+    border-radius: 5px;
+    text-decoration: underline;
+    font-size: 17px;
+    
+    
+}
+#home{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding-top: 180px;
+   color: white;
+   
+}
+.main-info{
+    width: 500px;
+}
+.my-name{
+    font-size:3rem;
+}
+.sub-desc,.sub-line{
+    color: #B9B4C7;
+    padding-top: 5px;
+}
+.btn-container{
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+button{
+  padding: 4px 6px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size:1.05rem;
+  transition: 0.5s;
+}
+button:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: 2px 2px 5px 0px rgba(211, 206, 206, 0.5);
+    
+}
+
+
+#about{
+    
+    padding-top: 220px;
+    color: white;
+}
+.about-start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head-section{
+    font-size: 2.5rem;
+}
+.about-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:80px ;
+    
+}
+.img-about{
+    border-radius: 50%;
+}
+
+.about-desc{
+    width: 600px;
+}
+.about-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.achivments , .education{
+    border: 1px solid white;
+    padding: 10px 15px ;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.2s;
+}
+.achivments:hover, .education:hover{
+    box-shadow: 4px 4px 10px 0px rgba(211, 206, 206, 0.5);
+    
 }

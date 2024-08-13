@@ -8,15 +8,12 @@
   </head>
   <body>
     <div class="container">
-
-
       <!-- The navbar sharts from here -->
-
 
       <nav class="navbar">
         <div class="name-logo">Ritesh Gaikwad</div>
-        <div>
-          <ul class="links">
+        <div class="nav-link">
+          <ul class="sidebar">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -24,21 +21,20 @@
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
+        <div class="mode">
+          <p>Dark Mode</p>
+        </div>
       </nav>
 
       <!-- Main home page starts here -->
 
-
       <section id="home">
         <div class="main-info">
-          <p>Hello, I'm</p>
-          <h1>Ritesh Gaikwad</h1>
-          <p>
-            "I'm a tech enthusiast with a relentless curiosity for learning and
-            exploring new technologies. My passion drives me to constantly seek
-            out opportunities that challenge me and push the boundaries of my
-            knowledge. With a strong focus on web and full-stack development,
-            I'm committed to honing my skills and growing as a developer."
+          <p class="sub-desc">Hello, I'm</p>
+          <h1 class="my-name">Ritesh Gaikwad</h1>
+          <p class="sub-line">
+            "I believe in the power of design and functionality working hand in
+            hand to create impactful user experiences."
           </p>
           <div class="btn-container">
             <button>Get Resume</button>
@@ -46,15 +42,31 @@
           </div>
         </div>
         <div class="my-img">
-          <img src="#" alt="image" />
+          <img
+            class="my-img"
+            src="./assets/person-icon.png"
+            alt="image"
+            width="280px"
+            height="280px"
+          />
         </div>
       </section>
+
+      <!-- this id about section  -->
       <section id="about">
-        <p>Get to know more</p>
-        <h1>About Me</h1>
+        <div class="about-start">
+          <p class="sub-desc">Get to know more</p>
+          <h1 class="head-section">About Me</h1>
+        </div>
         <div class="about-container">
           <div class="about-img">
-            <img src="#" alt="img" />
+            <img
+              class="img-about"
+              src="./assets/about.gif"
+              alt="img"
+              width="260px"
+              height="250px"
+            />
           </div>
           <div class="about-desc">
             <p>
@@ -68,14 +80,14 @@
               that meet the unique needs of each project."
             </p>
             <div class="about-cards">
-                <div class="achivments">
-                    <h3>Achievement</h3>
-                    <p>2nd place in Technosphere <br>RIT,Islampur</p>
-                </div>
-                <div class="education">
-                    <h3>Education</h3>
-                    <p>Bachelor of Engineering <br>Information Technology</p>
-                </div>
+              <div class="achivments">
+                <h3>Achievement</h3>
+                <p class="sub-desc">2nd place in Technosphere <br />RIT,Islampur</p>
+              </div>
+              <div class="education">
+                <h3>Education</h3>
+                <p class="sub-desc">Bachelor of Engineering <br />Information Technology</p>
+              </div>
             </div>
           </div>
         </div>
@@ -83,142 +95,133 @@
 
       <!-- Skill page starts here -->
 
-
       <section id="skills">
-
         <!-- basic tecnologies  -->
-         <div class="skill-card">
-            <h2>Base </h2>
-             <div>
-                <p>Java</p>
-             </div>
-             <div>
-                <p>DSA</p>
-             </div>
-             <div>
-                <p>OOP's</p>
-            </div>
-             <div>
-                <p>DBMS</p>
-             </div>
-             <div>
-                <p>Operating System</p>
-             </div>
-         </div>
+        <div class="skill-card">
+          <h2>Base</h2>
+          <div>
+            <p>Java</p>
+          </div>
+          <div>
+            <p>DSA</p>
+          </div>
+          <div>
+            <p>OOP's</p>
+          </div>
+          <div>
+            <p>DBMS</p>
+          </div>
+          <div>
+            <p>Operating System</p>
+          </div>
+        </div>
 
         <!-- frontend section -->
         <div class="skill-card">
-            <h2>Frontend Technologies</h2>
-            <div class="html">
-                <img src="#" alt="html">
-                <p>HTML 5</p>
-            </div>
-            <div class="html">
-                <img src="#" alt="CSS">
-                <p>CSS 3</p>
-            </div>
-            <div class="html">
-                <img src="#" alt="Javascript">
-                <p>JavaScript</p>
-            </div>
-            <div class="html">
-                <img src="#" alt="bootstrap">
-                <p>Bootstrap</p>
-            </div>
-            <div class="html">
-                <img src="#" alt="httml">
-                <p>Tailwind</p>
-            </div>
-            <div class="html">
-                <img src="#" alt="httml">
-                <p>React</p>
-            </div>
+          <h2>Frontend Technologies</h2>
+          <div class="html">
+            <img src="#" alt="html" />
+            <p>HTML 5</p>
+          </div>
+          <div class="html">
+            <img src="#" alt="CSS" />
+            <p>CSS 3</p>
+          </div>
+          <div class="html">
+            <img src="#" alt="Javascript" />
+            <p>JavaScript</p>
+          </div>
+          <div class="html">
+            <img src="#" alt="bootstrap" />
+            <p>Bootstrap</p>
+          </div>
+          <div class="html">
+            <img src="#" alt="httml" />
+            <p>Tailwind</p>
+          </div>
+          <div class="html">
+            <img src="#" alt="httml" />
+            <p>React</p>
+          </div>
         </div>
 
         <!-- backend section  -->
         <div class="skill-card">
-            <h2>Backend Technologies</h2>
-            <div class="html">
-                <img src="#" alt="html">
-                <p>JavaScript</p>
-            </div>
-            <div class="html">
-                <img src="#" alt="CSS">
-                <p>Node.js</p>
-            </div>
-            <div class="html">
-                <img src="#" alt="Javascript">
-                <p>Express.js</p>
-            </div>
+          <h2>Backend Technologies</h2>
+          <div class="html">
+            <img src="#" alt="html" />
+            <p>JavaScript</p>
+          </div>
+          <div class="html">
+            <img src="#" alt="CSS" />
+            <p>Node.js</p>
+          </div>
+          <div class="html">
+            <img src="#" alt="Javascript" />
+            <p>Express.js</p>
+          </div>
         </div>
-
-
       </section>
-
 
       <!-- Project section start here -->
 
       <section id="project">
-        <p>Check out my </p>
+        <p>Check out my</p>
         <h1>Projects</h1>
         <!-- Project card 1 -->
         <div class="project-container">
-            <div class="peoject-img">
-                <img src="#" alt="image">
-            </div>
-            <h3>Project title 1</h3>
-            <div class="button-container">
-                <button>Github</button>
-                <button>Live Demo</button>
-            </div>
+          <div class="peoject-img">
+            <img src="#" alt="image" />
+          </div>
+          <h3>Project title 1</h3>
+          <div class="button-container">
+            <button>Github</button>
+            <button>Live Demo</button>
+          </div>
         </div>
 
         <!-- project card 2 -->
         <div class="project-container">
-            <div class="peoject-img">
-                <img src="#" alt="image">
-            </div>
-            <h3>Project title 2</h3>
-            <div class="button-container">
-                <button>Github</button>
-                <button>Live Demo</button>
-            </div>
+          <div class="peoject-img">
+            <img src="#" alt="image" />
+          </div>
+          <h3>Project title 2</h3>
+          <div class="button-container">
+            <button>Github</button>
+            <button>Live Demo</button>
+          </div>
         </div>
 
         <!-- project card 3 -->
         <div class="project-container">
-            <div class="peoject-img">
-                <img src="#" alt="image">
-            </div>
-            <h3>Project title 3</h3>
-            <div class="button-container">
-                <button>Github</button>
-                <button>Live Demo</button>
-            </div>
+          <div class="peoject-img">
+            <img src="#" alt="image" />
+          </div>
+          <h3>Project title 3</h3>
+          <div class="button-container">
+            <button>Github</button>
+            <button>Live Demo</button>
+          </div>
         </div>
-
       </section>
-
 
       <!-- contact section start here -->
 
-      <section id="contact">
-
-      </section>
+      <section id="contact"></section>
 
       <!-- footer start here -->
 
       <footer>
         <nav>
-            <div>
-                <ul class="links">
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#skills">Skills</a></li>
-                  <li><a href="#project">Projects</a></li>
-                  <li><a href="#contact">Contact Us</a></li>
-                </ul>
-              </div>
+          <div>
+            <ul class="links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
         </nav>
         <p>Copyright &#169; 2024 Ritesh Gaikwad. All Rights Reserved.</p>
       </footer>
