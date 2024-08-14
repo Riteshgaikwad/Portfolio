@@ -23,6 +23,7 @@ body{
     color:white ;
     padding: 10px 20px;
     width: 100vw;
+    position: fixed;
     
 }
 .name-logo{
@@ -170,10 +171,10 @@ button:hover{
     /* background-color: #03346E; */
     padding: 20px 30px;
     border-radius: 15px;
-    transition: 0.8s;
+    transition: 0.5s;
     margin: 30px 20px;
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.025);
         box-shadow: 0 4px 8px 0 rgba(238, 233, 233, 0.2), 0 6px 20px 0 rgba(238, 234, 234, 0.19);
     }
 }
@@ -193,4 +194,70 @@ button:hover{
 
 #project{
     color: white;
+}
+
+.project-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+.project-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    align-items: center;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.025);
+        box-shadow: 0 4px 8px 0 rgba(238, 233, 233, 0.2), 0 6px 20px 0 rgba(238, 234, 234, 0.19);
+    }
+}
+.peoject-img img{
+    border-radius: 10%;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 250px;
+}
+
+
+.button-container{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    
+}
+
+/* contact me styling  */
+
+
+
+/* footer styling  */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.footer-nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-size: 1.75rem;
+   
+}
+.footer-nav a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+        color: bisque;
+    border-radius: 5px;
+    text-decoration: underline;
+    font-size: 1.77rem;
+    }
 }
