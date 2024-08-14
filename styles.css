@@ -24,6 +24,7 @@ body{
     padding: 10px 20px;
     width: 100vw;
     position: fixed;
+    z-index: 1;
     
 }
 .name-logo{
@@ -231,6 +232,46 @@ button:hover{
 }
 
 /* contact me styling  */
+
+.contact-container{
+    display: flex;
+    border: 1px solid white;
+    justify-content: space-around;
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 15px;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px 30px;
+    margin-bottom: 50px;
+}
+/* .email , .linkedin{
+   display: flex;
+   gap: 2px;
+   align-items: center;
+} */
+ .email, .linkedin{
+    display: flex;
+    align-items: center;
+    
+ }
+.contact-container a{
+    text-decoration: none;
+    color: white;
+    transform: translateX(1.1rem);
+    &:hover{
+        color: #B9B4C7;
+        text-decoration: underline;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
