@@ -28,17 +28,19 @@
 
       <!-- Main home page starts here -->
 
-      <section id="home">
+      <section id="home" class="reveal">
         <div class="main-info">
           <p class="sub-desc">Hello, I'm</p>
-          <h1 class="my-name">Ritesh Gaikwad</h1>
+          <h1 class="my-name">
+            Ritesh Gaikwad <span class="multiple-text"></span>
+          </h1>
           <p class="sub-line">
             "I believe in the power of design and functionality working hand in
             hand to create impactful user experiences."
           </p>
           <div class="btn-container">
-            <button>Get Resume</button>
-            <button>Contact Me</button>
+            <button id="resume">Get Resume</button>
+            <button id="cont">Contact Me</button>
           </div>
         </div>
         <div class="my-img">
@@ -53,8 +55,8 @@
       </section>
 
       <!-- this id about section  -->
-      <section id="about">
-        <div class="about-start">
+      <section id="about" class="reveal">
+        <div class="start">
           <p class="sub-desc">Get to know more</p>
           <h1 class="head-section">About Me</h1>
         </div>
@@ -99,8 +101,8 @@
 
       <!-- Skill page starts here -->
 
-      <section id="skills">
-        <div class="skills-start">
+      <section id="skills" class="reveal">
+        <div class="start">
           <p class="sub-desc">
             A list of my favorite tools and technologies that I use on a regular
             basis.
@@ -287,8 +289,8 @@
 
       <!-- Project section start here -->
 
-      <section id="project">
-        <div class="skills-start">
+      <section id="project" class="hidden">
+        <div class="start">
           <p class="sub-desc">Check out my</p>
           <h1 class="head-section">Project's</h1>
         </div>
@@ -296,36 +298,60 @@
           <!-- Project card 1 -->
           <div class="project-container">
             <div class="peoject-img">
-              <img src="./assets/pass-gen.png" alt="image"  />
+              <img src="./assets/pass-gen.png" alt="image" />
             </div>
             <h3 class="sub-desc">Password Generator</h3>
             <div class="button-container">
-              <button>Github</button>
-              <button>Live Demo</button>
+              <a
+                href="https://github.com/Riteshgaikwad/Password-Generator"
+                target="_blank"
+              >
+                <button>Github</button>
+              </a>
+              <a
+                href="https://riteshgaikwad.github.io/Password-Generator/"
+                target="_blank"
+              >
+                <button>Live Demo</button>
+              </a>
             </div>
           </div>
 
           <!-- project card 2 -->
           <div class="project-container">
             <div class="peoject-img">
-              <img src="./assets/weather-app.png" alt="image"  />
+              <img src="./assets/weather-app.png" alt="image" />
             </div>
             <h3 class="sub-desc">Weather App</h3>
             <div class="button-container">
-              <button>Github</button>
-              <button>Live Demo</button>
+              <a
+                href="https://github.com/Riteshgaikwad/Weather-App"
+                target="_blank"
+              >
+                <button>Github</button>
+              </a>
+              <a
+                href="https://riteshgaikwad.github.io/Weather-App/"
+                target="_blank"
+              >
+                <button>Live Demo</button>
+              </a>
             </div>
           </div>
 
           <!-- project card 3 -->
           <div class="project-container">
             <div class="peoject-img">
-              <img src="./assets//signature-app.png" alt="image" >
+              <img src="./assets//signature-app.png" alt="image" />
             </div>
             <h3 class="sub-desc">Signature App</h3>
             <div class="button-container">
-              <button>Github</button>
-              <button>Live Demo</button>
+              <a href="https://github.com/Riteshgaikwad/Signature-App">
+                <button>Github</button>
+              </a>
+              <a href="https://riteshgaikwad.github.io/Signature-App/">
+                <button>Live Demo</button>
+              </a>
             </div>
           </div>
         </div>
@@ -333,19 +359,30 @@
 
       <!-- contact section start here -->
 
-      <section id="contact">
-        <div class="skills-start">
+      <section id="contact" class="reveal">
+        <div class="start">
           <p class="sub-desc">Get in Touch</p>
           <h1 class="head-section">Contact Me</h1>
         </div>
         <div class="contact-container">
           <div class="email">
-            <img src="./assets/email.png" alt="" width="45px" height="45px">
-            <a href="mailto:gaikwadritesh2003@gmail.com">gaikwadritesh2003@gmail.com</a>
+            <img src="./assets/email.png" alt="" width="45px" height="45px" />
+            <a href="mailto:gaikwadritesh2003@gmail.com" target="_blank"
+              >gaikwadritesh2003@gmail.com</a
+            >
           </div>
           <div class="linkedin">
-            <img src="./assets/linkedin.png" alt="" width="35px" height="35px">
-            <a href="https://www.linkedin.com/in/ritesh-gaikwad-09196a226/">Linkedin</a>
+            <img
+              src="./assets/linkedin.png"
+              alt=""
+              width="35px"
+              height="35px"
+            />
+            <a
+              href="https://www.linkedin.com/in/ritesh-gaikwad-09196a226/"
+              target="_blank"
+              >Linkedin</a
+            >
           </div>
         </div>
       </section>
@@ -364,9 +401,12 @@
             </ul>
           </div>
         </nav>
-        <p class="sub-desc">Copyright &#169; 2024 Ritesh Gaikwad. All Rights Reserved.</p>
+        <p class="sub-desc">
+          Copyright &#169; 2024 Ritesh Gaikwad. All Rights Reserved.
+        </p>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./script.js"></script>
   </body>
 </html>
