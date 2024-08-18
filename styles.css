@@ -10,9 +10,7 @@
 }
 
 /* root  */
-
-
-:root{
+:root{ 
     /* light mode color  */
     --background-main:	#fafafa;
     --navbar-background:#9394a5;
@@ -23,6 +21,20 @@
     --card-container:#e4e5f1;
     --btn-color: #373B44;
     --btn-outline: #0000;
+ }
+
+
+.dark-theme{
+    /* dark mode color  */
+    --background-main:	#222831;
+    --navbar-background:#76ABAE;
+    --text-color:white;
+    --sub-text:#9394a5;
+    --typer-color:#76ABAE;
+    --box-shadow:rgba(245, 237, 237, 0.3);
+    --card-container:#31363F;
+    --btn-color: #f4f6fb;
+    --btn-outline: #f7f0f000;
 }
 
 
@@ -273,6 +285,25 @@ button{
     text-decoration: none;
 }
 
+.proj-sub-button {
+    margin-top: 10px;
+    height: 40px;
+    width: 90px;
+    border: 2px rgb(88, 84, 84) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 14px;
+    border-radius: 25px;
+    transition: 0.5s;
+    &:hover{
+        background-color: RGB(38 38 38);
+        color: whitesmoke;
+        box-shadow: 0 4px 8px 0 var(--box-shadow), 0 6px 20px 0 var(--box-shadow);
+        transform: scale(1.1);
+    }
+  }
 /* contact me styling  */
 
 .contact-container{
@@ -342,23 +373,4 @@ footer{
 
 
 
-.proj-sub-button {
-    margin-top: 10px;
-    height: 40px;
-    width: 90px;
-    border: 2px rgb(88, 84, 84) solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 14px;
-    border-radius: 25px;
-    transition: 0.5s;
-    &:hover{
-        background-color: RGB(38 38 38);
-        color: whitesmoke;
-        box-shadow: 0 4px 8px 0 var(--box-shadow), 0 6px 20px 0 var(--box-shadow);
-        transform: scale(1.1);
-    }
-  }
  
