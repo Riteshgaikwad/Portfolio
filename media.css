@@ -1,0 +1,89 @@
+/* media queries  */
+
+
+@media( max-width: 1178px){
+    .project-cards{
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-container{
+        width: 350px;
+        margin: 10px 10px;
+    }
+    .main-info{
+        max-width: 390px;
+    }
+    .about-desc{
+        max-width: 400px;
+    }
+    
+    .achivments , .education{
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 786px) {
+    .navbar{
+        display: none;
+    }
+    #hamburger-nav{
+        /* display: flex;
+        justify-content: space-around; */
+    background-color: var(--navbar-background);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none !important;
+    color:var(--text-color);
+    padding: 10px 20px;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    }
+    #home{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-desc{
+        margin-top: 20px;
+    }
+    .about-cards{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    .first-section,.second-section{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       
+        
+        
+    }
+    .skill-card{
+        display: flex;
+        justify-content: center;
+        width: 300px;
+    }
+    .contact-container{
+        max-width: 380px;
+    }
+    .email, .linkedin{
+        font-size:x-small;
+    }
+    .footer{
+        height: 40vh;
+    }
+    footer nav{
+        height: fit-content;
+    }
+    .footer-nav a{
+        font-size: 1rem;
+    }
+}
+

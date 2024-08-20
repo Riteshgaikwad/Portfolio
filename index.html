@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ritesh Gaikwad | Portfolio</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./media.css">
   </head>
   <body>
     <div class="container">
@@ -21,10 +22,30 @@
             <li><a href="#contact">Contact Me</a></li>
           </ul>
         </div>
-        <div class="mode" onclick="toggleFunction()">
-          <!-- <p>Dark Mode</p> -->
-           <button   id="icon" onclick="toggleFunction()" class="proj-sub-button">Light Mode</button>
+        <div class="mode" >
+           <button   id="icon" onclick="toggleFunction();playClickSound();" class="proj-sub-button" >Dark Mode</button>
         </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Ritesh Gaikwad</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+          </div>
+        </div>
+        <div class="mode" >
+          <button   id="icon" onclick="toggleFunction();playClickSound();" class="proj-sub-button">Dark Mode</button>
+       </div>
+        
       </nav>
 
       <!-- Main home page starts here -->

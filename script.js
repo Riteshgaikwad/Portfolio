@@ -69,8 +69,17 @@ document.getElementById("icon").addEventListener("click", function () {
 
 // button click sound
 
-const clickSoundUrl = "./click.mp3"; // Adjust this to your sound file location
+const clickSoundUrl = "./assets/click.mp3"; // Adjust this to your sound file location
 function playClickSound() {
   const audio = new Audio(clickSoundUrl);
   audio.play();
+}
+
+
+//hamburg menu 
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
 }
